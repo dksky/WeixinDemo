@@ -6,6 +6,7 @@
 
 1. 在微信公众平台上填写服务器配置，如下图：
 ![a895baf9ea6a43cbad3b499646c5993b-image.png](http://ozeauwce0.bkt.clouddn.com//file/2018/3/a895baf9ea6a43cbad3b499646c5993b-image.png) 
+
 **URL**：请填写为"项目根目录/f/wx/core"
 
 **Token**：随意填，但填的值要记下来，之后填写在服务端的配置文件中。
