@@ -5,6 +5,7 @@
 官网文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421135319
 
 1. 在微信公众平台上填写服务器配置，如下图：
+
 ![a895baf9ea6a43cbad3b499646c5993b-image.png](http://ozeauwce0.bkt.clouddn.com//file/2018/3/a895baf9ea6a43cbad3b499646c5993b-image.png) 
 
 **URL**：请填写为"项目根目录/f/wx/core"
@@ -14,6 +15,7 @@
 同时要记录下微信公众号的**appId**，**secret**，之后同样需要填写在服务端的配置文件**global.properties**中。
 
 2. 验证消息是否来自微信服务器
+
 WeiXinFrontController接收对应url的get请求，获取参数**signature**、**timestamp**、**nonce**和**echostr**。根据**signature**、**timestamp**、**nonce**三个参数调用SignUtil进行验证请求是否来自微信。校验流程如下：
 (1) 将**token**、**timestamp**、**nonce**三个参数进行字典序排序 
 (2) 将三个参数字符串拼接成一个字符串进行sha1加密 
