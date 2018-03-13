@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.ldk.wx.core.pojo.AccessToken;
+import com.ldk.wx.util.CacheUtils;
 import com.ldk.wx.util.Global;
 
 /**
@@ -37,8 +38,8 @@ public class ObtainAccessTokenScheduler {
 		AccessToken accessToken = WXUtil.getAccessToken(APP_ID, SECRET);
 		String jsapi_ticket = WXUtil.getJsApiTicket(accessToken.getToken());
 		
-		/*CacheUtils.put("accessToken", accessToken);
-		CacheUtils.put("jsapi_ticket", jsapi_ticket);*/
+		CacheUtils.put("accessToken", accessToken);
+		CacheUtils.put("jsapi_ticket", jsapi_ticket);
 		logger.info("获取accessToken：" + accessToken.getToken() + " 成功！\n"
 				+ "获取jsapi_ticket：" + jsapi_ticket + " 成功！");
 	}
