@@ -42,4 +42,14 @@ access_token和jsapi_ticket的有效期目前都为2个小时，故需要定时�
 
 定时任务类ObtainAccessTokenScheduler中定时使用appId和secret调用微信接口获取access_token的值，使用access_token调用微信接口获取jsapi_ticket的值。
 
+## 四、自定义菜单创建接口调用
+官网文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141013
+
+启动项目后，通过调用“项目ip/f/wx/core/createMenu”可以创建默认菜单。具体代码及菜单构建见WeiXinFrontController。
+
+## 五、oauth2授权获取用户信息接口调用
+官网文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842
+
+启动项目后，通过调用“项目ip/f/wx/core/getOpenId?redirect=http://www.baidu.com”可以通过oauth2授权获取用户信息，并在获取用户信息后自动跳转到redirect参数对应的url。具体代码及菜单构建见WeiXinFrontController。
+
 其他微信api调用待继续更新完善。
