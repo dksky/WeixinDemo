@@ -45,7 +45,7 @@ access_token和jsapi_ticket的有效期目前都为2个小时，故需要定时�
 ## 四、自定义菜单创建接口调用
 官网文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141013
 
-启动项目后，通过调用“项目ip/f/wx/core/createMenu”可以创建默认菜单。具体代码及菜单构建见WeiXinFrontController。
+启动项目后，通过调用“`项目ip/f/wx/core/createMenu`”可以创建默认菜单。具体代码及菜单构建见WeiXinFrontController。
 
 ## 五、oauth2授权获取用户信息接口调用
 官网文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842
