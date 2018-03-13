@@ -249,7 +249,7 @@ public class WeiXinFrontController {
 		String state = "1";
 		String redirect = request.getParameter("redirect");
 		//获取snsapi_userinfo方式回调授权页面的url，用于重定向到微信授权。
-		String url = WXOAuth2AuthorizeUtil.getBaseAuthorizeUrl(Global.getConfig("weixin.appId"), 
+		String url = WXOAuth2AuthorizeUtil.getUserInfoAuthorizeUrl(Global.getConfig("weixin.appId"), 
 				getBasePath(request) + "/" + frontPath + "/wx/core/obtainCodeForOpenId?redirect=" + redirect, /////////////
 				state);
 		try {
