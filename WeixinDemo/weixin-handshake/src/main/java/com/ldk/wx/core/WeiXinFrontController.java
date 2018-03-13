@@ -234,7 +234,7 @@ public class WeiXinFrontController {
 	}
 	
 	/**
-	 * 用于获取当前openId接口，需要传参serviceId。redirect。
+	 * 用于获取当前openId接口，需要传参。redirect。
 	 * @param request
 	 * @param response
 	 * @return
